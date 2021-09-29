@@ -50,7 +50,7 @@
 	"NOVA_LIGHTNING_DESCRIPTION": "Auto use Lightning Strike when Nova is used. LIGHTNING_KEY must be set. This macro does not work without ROBOTJS.",
 	"LIGHTNING_KEY": "1",
 	"LIGHTNING_KEY_DESCRIPTION": "Lightning Strike Key. Find keyboard syntax list here http://robotjs.io/docs/syntax",
-	"AP_VP": false,
+	"AP_VP": true,
 	"AP_VP_DESCRIPTION": "Auto use void pulse when arcane pulse full charge is used. VP_KEY must be set. This macro does not work without ROBOTJS.",
 	"VP_KEY": "f3",
 	"VP_KEY_DESCRIPTION": "Void Pulse Key. Find keyboard syntax list here http://robotjs.io/docs/syntax",
