@@ -1,4 +1,4 @@
-/* SCRIPT BY YOUR MOM*/
+/* SCRIPT BY BERNKASTEL & shiro*/
 'use strict'
 const JOB_SORC =4;
 
@@ -571,7 +571,7 @@ module.exports = function sorc(dispatch) {
 	var atkArr;
 
 	let talentState = [];
-	dispatch.hook('S_LOAD_EP_INFO', dispatch.majorPatchVersion >= 105 ? 3 : 2, (event) => {
+	dispatch.hook('S_LOAD_EP_INFO', 3, (event) => {
 		if (!enabled) { return };
 		talentState = [];
 		event.perks.forEach(function (element) {
@@ -604,7 +604,7 @@ module.exports = function sorc(dispatch) {
 		}
 	});
 
-	dispatch.hook('S_LOGIN', dispatch.majorPatchVersion >= 86 ? 14 : 13, (event) => {
+	dispatch.hook('S_LOGIN', 14, (event) => {
 		cid = event.gameId;
 		model = event.templateId;
 
@@ -985,7 +985,7 @@ module.exports = function sorc(dispatch) {
 		
 	});
 
-	dispatch.hook('S_EACH_SKILL_RESULT', dispatch.majorPatchVersion >= 86 ? 14 : 13, (event) => {
+	dispatch.hook('S_EACH_SKILL_RESULT', 15, (event) => {
 		if(event.target === cid) {
 			if (event.reaction.enable == true) {
 				disabSkill[SKILL_TELEPORT_JAUNT] = false;
@@ -3258,7 +3258,7 @@ disabSkill[SKILL_FIREICE] = true;
 	});
 
 
-	dispatch.hook('S_PLAYER_STAT_UPDATE', dispatch.majorPatchVersion >= 106 ? 16 : 15, (event) => {
+	dispatch.hook('S_PLAYER_STAT_UPDATE', 17, (event) => {
 		if (!enabled) return;
 		aspd = (event.attackSpeed + event.attackSpeedBonus) /100;
 		if (event.hp ==0) {

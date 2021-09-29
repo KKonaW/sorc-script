@@ -1,5 +1,5 @@
 {
-	"GLOBAL_LATENCY": 100,
+	"GLOBAL_LATENCY": 0,
 	"GLOBAL_LATENCY_DESCRIPTION": "change GLOBAL_LATENCY to your lowest usual ping",
 	"DISABLE_CHARGE": false,
 	"DISABLE_CHARGE_DESCRIPTION": "this will disable charge bar emulation, useful for people who have unstable net and prone to get stuck or server lagging badly",
